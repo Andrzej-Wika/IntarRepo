@@ -1,0 +1,15 @@
+{
+  "ConnectionStrings": {
+    "IMPULSConnectionString": "Data Source=(DESCRIPTION = (ADDRESS_LIST =(ADDRESS =(PROTOCOL = TCP)(HOST = 192.168.1.41)(PORT = 1521)))(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = {database} )));User ID={user};Password={password}"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "KatalogRoboczy": "G:\\repos\\IntarRepo\\KatalogRoboczy",
+  "Branch": "master",
+  "Description": "v1.0",
+  "AllowedHosts": "*"
+}

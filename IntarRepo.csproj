@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+
+    <RootNamespace>IntarRepo</RootNamespace>
+    <AssemblyName>IntarRepo</AssemblyName>
+
+    <!-- ikona EXE -->
+    <ApplicationIcon>intar.ico</ApplicationIcon>
+
+    <!-- zachowuje zgodność z typowym zachowaniem .NET Framework -->
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+
+    <!-- opcjonalnie: jeśli używasz API tylko-windows -->
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Twoje NuGety powinny być jako PackageReference -->
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="10.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.2" />
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="2.19.240" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="intar.ico" />
+    <EmbeddedResource Include="Resources\shell32_1_194.ico" />
+    <Content Include="IntarRepo.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
